@@ -1,0 +1,72 @@
+header {
+    padding: 2rem $gutter;
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+nav {
+    ul {
+        a {
+            img {
+                display: none;
+            }
+
+            span {
+                display: block;
+            }
+        }
+    }
+}
+
+.cardContainer {
+    grid-template-columns: 1fr 1fr;
+}
+
+#home {
+    grid-template-areas:
+        "name"
+        "text"
+        "image";
+}
+
+#projects {
+
+    .card {
+        grid-template-areas:
+            'image'
+            'name'
+            'text';
+    }
+}
+
+#skills {
+    .card {
+        grid-template-columns: unset;
+        grid-template-areas: 
+        'image'
+        'name'
+        'text';
+        img {
+            justify-self: center;
+            border-radius: 50px;
+            aspect-ratio: 1 / 1;
+            width: 100%;
+            min-width: 100px;
+            max-width: 200px;
+        }
+        h3 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
+
+#contact {
+    .links {
+        grid-template-columns: 1fr 1fr;
+    }
+}
